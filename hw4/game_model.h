@@ -85,6 +85,7 @@ class GameModel {
 
         void AdjustScore(const int &idx); //if fires remaining, inc score and dec fires
 
+        // --- Class instance variables ---
         Array2D extension_board_; //extra candy to drop
         Array2D game_board_; //current visible board
         Array2D original_fired_state_;
@@ -98,6 +99,7 @@ class GameModel {
         int max_score_;
         int score_ = 0;
 
+        // --- Constants ---
         const int NO_CANDY = -1;
         const int MIN_MATCH_LENGTH = 3;
         const int DEFAULT_CANDY_TYPE = 0;

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hw4\game_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw4\test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw4\game_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw4\adaptors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw3\test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw3\model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw3\game_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw2\array2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\distribution\mainClientSocketTest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\distribution\mainServerSocketTest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\socketCode\ClientSocket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\socketCode\CSE333Socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\socketCode\ServerSocket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\socketCode\Verify333.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\game_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hw5\game_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jansson\documentation\jansson-2.9\_downloads\github_commits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hw4\game_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw4\adaptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw4\game_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw3\game_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw3\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw2\array2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\socketCode\ClientSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\socketCode\CSE333.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\socketCode\CSE333Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\socketCode\ServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\game_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hw5\game_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jansson\include\jansson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="jansson\include\jansson_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jansson\documentation\jansson-2.9\index.html" />
+  </ItemGroup>
+</Project>

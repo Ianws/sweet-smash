@@ -18,8 +18,8 @@
  *  along with 333proj.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// This file contains a number of HTTP and HTML parsing routines
-// that come in useful throughput the assignment.
+ // This file contains a number of HTTP and HTML parsing routines
+ // that come in useful throughput the assignment.
 
 #include <arpa/inet.h>
 #include <cerrno>
@@ -58,9 +58,9 @@ namespace hw5_net {
 
     // Do the lookup.
     if ((retval = getaddrinfo(hostname.c_str(),
-			      portstr,
-			      &hints,
-			      &results)) != 0) {
+                              portstr,
+                              &hints,
+                              &results)) != 0) {
       throw string("ClientSocket: getaddrinfo failed: ") + gai_strerror(retval);
     }
 
@@ -68,11 +68,11 @@ namespace hw5_net {
     for (r = results; r != NULL; r = r->ai_next) {
       // Try manufacturing the socket.
       if ((clientsock = socket(r->ai_family, SOCK_STREAM, 0)) == -1) {
-	continue;
+        continue;
       }
       // Try connecting to the peer.
       if (connect(clientsock, r->ai_addr, r->ai_addrlen) == -1) {
-	continue;
+        continue;
       }
       socketFD_ = clientsock;
       freeaddrinfo(results);
@@ -84,13 +84,13 @@ namespace hw5_net {
 
   int ClientSocket::WrappedRead(char *buf, int readlen) {
     int res;
-    if (socketFD_ < 0 ) return -1;
+    if (socketFD_ < 0) return -1;
     while (1) {
       res = read(socketFD_, buf, readlen);
       if (res == -1) {
-	if ((errno == EAGAIN) || (errno == EINTR))
-	  continue;
-	throw std::string("CSE333Socket::WrappedRead: " ) + std::strerror(errno);
+        if ((errno == EAGAIN) || (errno == EINTR))
+          continue;
+        throw std::string("CSE333Socket::WrappedRead: ") + std::strerror(errno);
       }
       break;
     }
@@ -101,18 +101,18 @@ namespace hw5_net {
     int res, written_so_far = 0;
 
     while (written_so_far < writelen) {
-      if ( socketFD_ < 0 ) return -1;
+      if (socketFD_ < 0) return -1;
       res = write(socketFD_, buf + written_so_far, writelen - written_so_far);
       if (res == -1) {
-	if ((errno == EAGAIN) || (errno == EINTR))
-	  continue;
-	throw std::string("CSE333Socket::WrappedWrite: " ) + std::strerror(errno);
+        if ((errno == EAGAIN) || (errno == EINTR))
+          continue;
+        throw std::string("CSE333Socket::WrappedWrite: ") + std::strerror(errno);
       }
       if (res == 0)
-	break;
+        break;
       written_so_far += res;
     }
     return written_so_far;
   }
-  
+
 }  // namespace hw5_net

@@ -15,7 +15,7 @@ extern "C" void FreeCandyFunction(int idx);
 extern "C" void FreeIntFunction(int idx);
 
 /////////////////////////////////////////////////////////////
-/////////// PUBLIC METHODS
+// PUBLIC METHODS
 /////////////////////////////////////////////////////////////
 
 // Constructs a GameModel instance by deserializing game data file
